@@ -1,13 +1,25 @@
 .root{
     padding: 30px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     background: linear-gradient(90.07deg, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%); ;
 }
 
 .rightContainer{
+    flex: 0.5;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 500px;
+}
+.leftContainer{
+    flex: 0.5;
+}
+.leftImageContainer{
+    display: flex;
+    justify-content: center;
 }
 
 .rightContainer > h2 {
@@ -32,7 +44,7 @@ line-height: 27px;
         text-align: center;
         align-items: center;
     }
-    .leftContainer > img {
+    .leftImageContainer > img {
         display: none;
     }
 }

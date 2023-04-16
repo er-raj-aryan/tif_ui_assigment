@@ -1,0 +1,87 @@
+.root {
+  background: #f8f8f8;
+  padding: 40px;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.companyLogo {
+  display: flex;
+  align-items: center;
+}
+
+.socialLinksContainer {
+  max-width: 250px;
+}
+.contactUsContainer {
+  max-width: 250px;
+}
+.moreLinksContainer {
+  max-width: 250px;
+}
+
+.socialSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.socialSubContainer > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactUsContainer > ul {
+  list-style: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contactUsContainer > ul > li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.6559px;
+  line-height: 23px;
+}
+
+.moreLinksContainer > ul {
+  list-style: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.moreLinksContainer > ul > li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.6559px;
+  line-height: 23px;
+}
+
+.heading {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #0e2368;
+  margin-bottom: 15px;
+}
+
+.socialIcon {
+  height: 14px;
+  width: 14px;
+}
+
+@media only screen and (max-width:760px) {
+    .root{
+        flex-direction: column;
+    }
+}

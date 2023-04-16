@@ -15,7 +15,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 1,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -43,8 +43,8 @@ function LatestArticleSection() {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {["1", "2", "3", "4", "5", "6"].map(() => (
-          <ArticleCard />
+        {["1", "2", "3", "4", "5", "6"].map((e,index) => (
+          <ArticleCard key={index} />
         ))}
       </Carousel>
     </div>

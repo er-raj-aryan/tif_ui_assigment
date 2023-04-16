@@ -7,7 +7,9 @@ function AboutUs
   return (
     <div className={style.root}>
     <div className={style.leftContainer}>
+    <div className={style.leftImageContainer}>
         <img src="aboutus.png" alt='' />
+    </div>
     </div>
     <div className={style.rightContainer}>
       <h2>About Us</h2>
