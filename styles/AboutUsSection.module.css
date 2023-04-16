@@ -1,0 +1,38 @@
+.root{
+    padding: 30px;
+    display: flex;
+    background: linear-gradient(90.07deg, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%); ;
+}
+
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rightContainer > h2 {
+    color:  #0E2368;
+    font-family: var(--secondary-font-family);
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 27px;
+}
+
+.rightContainer > p {
+    color: #444957;
+}
+
+
+@media only screen and (max-width:760px) {
+    .root{
+        flex-direction: column;
+    }
+    .rightContainer{
+        text-align: center;
+        align-items: center;
+    }
+    .leftContainer > img {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.button{
+    padding: 10px 20px;
+    border-radius:50px;
+    font-size: var(--secondary-font-size);
+    font-family: var(--tertiary-font-family);
+}
+
+.filled{
+    background-color: var(--theme-color);
+    border: 1px solid white;
+    color: white;
+}
+
+.outline{
+    border: 1px solid #424961;
+    color: #424961;
+}

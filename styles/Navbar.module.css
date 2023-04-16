@@ -1,0 +1,17 @@
+.root{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.companyLogo{
+    width: 90px;
+    height: 80px;
+    object-fit: contain;
+}
+
