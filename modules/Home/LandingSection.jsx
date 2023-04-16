@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import React from "react";
 import style from "@/styles/LandingSection.module.css";
 import Button from "@/components/Button";
+import Image from "next/image";
 
 function LandingSection() {
   return (
@@ -19,8 +20,8 @@ function LandingSection() {
       </div>
       {/* right image section */}
       <div className={style.rightContainer}>
-        <img className={style.image1} src="pizza.png" alt="" />
-        <img className={style.image2} src="Vector.png" alt=""/>
+        <img className={style.image1} src="/pizza.png"  alt="" />
+        <img className={style.image2} src="/Vector.png"    alt=""/>
       </div>
     </div>
   );

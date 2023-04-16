@@ -8,14 +8,14 @@
 .leftContainer {
   display: flex;
   flex-direction: column;
-  flex: 0.5;
+  flex: 1;
   gap: 20px;
   width: 500px;
   padding: 50px;
 }
 
 .rightContainer{
-flex: 0.5;
+/* flex: 0.5; */
 }
 .image1{
     object-fit: contain;
