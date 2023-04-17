@@ -12,8 +12,33 @@
     margin-left: 45px;
 }
 
+.CarouselContainer{
+    /* border: 1px solid; */
+    /* display: flex; */
+}
+.CarouselItem{
+    /* border: 1px solid; */
+}
+
+.ArticleSection1Container{
+    display: flex;
+}
+.ArticleSection2Container{
+    display: flex;
+}
+
+.CarouselSection1{
+    display: flex;
+    flex-direction: column;
+}
 
 @media only screen and (max-width:760px) {
+    .ArticleSection1Container{
+        flex-direction: column;
+    }
+    .ArticleSection2Container{
+        flex-direction: column;
+    }
     .label{
         text-align: center;
         margin: 0px;

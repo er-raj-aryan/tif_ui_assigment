@@ -7,15 +7,15 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 4,
+    items: 1,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
+    items: 1,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 1,
   },
   mobile: {
     breakpoint: { max: 760, min: 0 },
@@ -23,7 +23,7 @@ const responsive = {
   },
 };
 
-const LatestArticles = [
+const LatestArticles1 = [
   {
     id:"#1",
     imageUrl:"grilledTomato.png",
@@ -41,8 +41,8 @@ const LatestArticles = [
     imageUrl:"postWorkout.png",
     title:"Post-workout Recipes",
     description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
-  },
-  {
+  },]
+ const LatestArticles2 = [{
     id:"#4",
     imageUrl:"HowToGrillCorn.png",
     title:"How To Grill Corn",
@@ -62,6 +62,21 @@ const LatestArticles = [
   },
 ];
 
+const ArticleSection1 = () => {
+  return <div className={style.ArticleSection1Container}>
+      {LatestArticles1.map((item,index) => (
+    <ArticleCard key={index} imageUrl={item.imageUrl} title={item.title} description={item.description}  />
+  ))}
+  </div>
+}
+const ArticleSection2 = () => {
+  return <div className={style.ArticleSection2Container}>
+      {LatestArticles2.map((item,index) => (
+    <ArticleCard key={index} imageUrl={item.imageUrl} title={item.title} description={item.description}  />
+  ))}
+  </div>
+}
+
 function LatestArticleSection() {
   return (
     <div className={style.root}>
@@ -78,14 +93,13 @@ function LatestArticleSection() {
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        containerClass="carousel-container"
+        containerClass={style.CarouselContainer}
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+        itemClass={style.CarouselItem}
       >
-        {LatestArticles.map((item,index) => (
-          <ArticleCard key={index} imageUrl={item.imageUrl} title={item.title} description={item.description}  />
-        ))}
+        <ArticleSection1 />
+        <ArticleSection2 />
       </Carousel>
     </div>
   );

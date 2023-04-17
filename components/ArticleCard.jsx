@@ -5,7 +5,7 @@ import style from "@/styles/ArticleCard.module.css";
 
 function ArticleCard(props) {
   return (
-    <Card margin={10}>
+    <Card margin={10} className={style.card}>
   <CardBody>
     <Image
       src={props.imageUrl ? props.imageUrl :''}
