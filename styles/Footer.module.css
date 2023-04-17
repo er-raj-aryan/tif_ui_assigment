@@ -2,7 +2,7 @@
   background: #f8f8f8;
   padding: 40px;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 50px;
   justify-content: space-around;
 }
@@ -80,8 +80,38 @@
   width: 14px;
 }
 
-@media only screen and (max-width:760px) {
-    .root{
-        flex-direction: column;
-    }
+.copyRight {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.76168px;
+  line-height: 32px;
+  /* identical to box height, or 367% */
+
+  text-align: center;
+  color: #828b9c;
+}
+
+@media only screen and (max-width: 760px) {
+  .root {
+    flex-direction: column;
+  }
+  .socialLinksContainer {
+    max-width: 100%;
+  }
+  .socialLinksContainer > h1 {
+    display: none;
+  }
+  .companyLogo{
+    justify-content: center;
+  }
+  .socialSubContainer{
+    gap: 10px;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .copyRight {
+    text-align: center;
+    width: 100%;
+  }
 }

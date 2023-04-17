@@ -23,9 +23,49 @@ const responsive = {
   },
 };
 
+const LatestArticles = [
+  {
+    id:"#1",
+    imageUrl:"grilledTomato.png",
+    title:"Grilled  Tomatoes at Home",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+  {
+    id:"#2",
+    imageUrl:"snackForTravel.png",
+    title:"Snacks for Travel",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+  {
+    id:"#3",
+    imageUrl:"postWorkout.png",
+    title:"Post-workout Recipes",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+  {
+    id:"#4",
+    imageUrl:"HowToGrillCorn.png",
+    title:"How To Grill Corn",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+  {
+    id:"#5",
+    imageUrl:"CrunchwrapSupreme.png",
+    title:"Crunchwrap Supreme",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+  {
+    id:"#6",
+    imageUrl:"BroccoliCheeseSoup.png",
+    title:"Broccoli Cheese Soup",
+    description:"PLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard..."
+  },
+];
+
 function LatestArticleSection() {
   return (
     <div className={style.root}>
+    <h1 className={style.label}>Latest Articles</h1>
       <Carousel
         swipeable={false}
         draggable={false}
@@ -43,8 +83,8 @@ function LatestArticleSection() {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {["1", "2", "3", "4", "5", "6"].map((e,index) => (
-          <ArticleCard key={index} />
+        {LatestArticles.map((item,index) => (
+          <ArticleCard key={index} imageUrl={item.imageUrl} title={item.title} description={item.description}  />
         ))}
       </Carousel>
     </div>

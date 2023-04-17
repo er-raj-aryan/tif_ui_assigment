@@ -25,6 +25,9 @@
 .image2{
     position: relative;
     object-fit: contain;
+    background:url('/pizza.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .title {
@@ -44,6 +47,15 @@
   color: #444957;
 }
 
+.titleHighlight{
+  color: var(--theme-color);
+}
+
+@media only screen and (max-width: 1200px) {
+    .root{
+     align-items:flex-start !important;
+    }
+}
 @media only screen and (max-width: 760px) {
     .root{
      flex-direction: column-reverse;

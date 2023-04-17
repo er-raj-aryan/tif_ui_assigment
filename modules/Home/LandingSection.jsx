@@ -9,7 +9,7 @@ function LandingSection() {
     <div className={style.root}>
       {/* left description section  */}
       <div className={style.leftContainer}>
-        <h1 className={style.title}>Discover the Best Food and Drinks</h1>
+        <h1 className={style.title}>Discover the <span className={style.titleHighlight}>Best</span> Food and Drinks</h1>
         <p className={style.description}>
           Naturally made Healthcare Products for the better care & support of
           your body.
@@ -20,7 +20,6 @@ function LandingSection() {
       </div>
       {/* right image section */}
       <div className={style.rightContainer}>
-        <img className={style.image1} src="/pizza.png"  alt="" />
         <img className={style.image2} src="/Vector.png"    alt=""/>
       </div>
     </div>

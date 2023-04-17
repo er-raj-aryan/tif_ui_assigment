@@ -39,7 +39,7 @@ function Footer() {
       <img className={style.socialIcon} src="facebook.png" alt=""/>
       </li>
       </ul>
-      <p>© 2022 Food Truck Example</p>
+      <p className={style.copyRight}>© 2022 Food Truck Example</p>
       </div>
     </div>
     
